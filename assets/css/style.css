@@ -211,11 +211,11 @@ body {
 
 /* ======================= Cards ====================== */
 .cardBox {
-  position: relative;
+  position: center;
   width: 100%;
   padding: 20px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 2fr);
   grid-gap: 30px;
 }
 
@@ -231,7 +231,7 @@ body {
 }
 
 .cardBox .card .numbers {
-  position: relative;
+  position: center;
   font-weight: 500;
   font-size: 2.5rem;
   color: var(--blue);
@@ -255,6 +255,13 @@ body {
 .cardBox .card:hover .cardName,
 .cardBox .card:hover .iconBx {
   color: var(--white);
+}
+.chart-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
 }
 
 /* ================== Order Details List ============== */
