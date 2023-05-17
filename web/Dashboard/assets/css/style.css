@@ -8,7 +8,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 :root {
   --blue: #2a2185;
   --white: #fff;
@@ -261,20 +260,20 @@ body {
 /* ================== Order Details List ============== */
 .details {
   position: relative;
-  width: 100%;
-  padding: 20px;
+  width: 145%;
+  padding: 100px;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-gap: 30px;
   /* margin-top: 10px; */
 }
 
-.details .recentOrders {
+.details .Requests {
   position: relative;
   display: grid;
-  min-height: 500px;
+  min-height: 100px;
   background: var(--white);
-  padding: 20px;
+  padding: 10px;
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
   border-radius: 20px;
 }
@@ -290,7 +289,7 @@ body {
 }
 .cardHeader .btn {
   position: relative;
-  padding: 5px 10px;
+  padding: 2px 4px;
   background: var(--blue);
   text-decoration: none;
   color: var(--white);
@@ -305,32 +304,32 @@ body {
 .details table thead td {
   font-weight: 600;
 }
-.details .recentOrders table tr {
+.details .Requests table tr {
   color: var(--black1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-.details .recentOrders table tr:last-child {
+.details .Requests table tr:last-child {
   border-bottom: none;
 }
-.details .recentOrders table tbody tr:hover {
+.details .Requests table tbody tr:hover {
   background: var(--blue);
   color: var(--white);
 }
-.details .recentOrders table tr td {
+.details .Requests table tr td {
   padding: 10px;
 }
-.details .recentOrders table tr td:last-child {
+.details .Requests table tr td:last-child {
   text-align: end;
 }
-.details .recentOrders table tr td:nth-child(2) {
+.details .Requests table tr td:nth-child(2) {
   text-align: end;
 }
-.details .recentOrders table tr td:nth-child(3) {
+.details .Requests table tr td:nth-child(3) {
   text-align: center;
 }
 .status.delivered {
   padding: 2px 4px;
-  background: #8de02c;
+  background: #52d100;
   color: var(--white);
   border-radius: 4px;
   font-size: 14px;
@@ -338,7 +337,7 @@ body {
 }
 .status.pending {
   padding: 2px 4px;
-  background: #e9b10a;
+  background: #1237cc;
   color: var(--white);
   border-radius: 4px;
   font-size: 14px;
@@ -354,57 +353,12 @@ body {
 }
 .status.inProgress {
   padding: 2px 4px;
-  background: #1795ce;
+  background: #1237cc;
   color: var(--white);
   border-radius: 4px;
   font-size: 14px;
   font-weight: 500;
 }
-
-.recentCustomers {
-  position: relative;
-  display: grid;
-  min-height: 500px;
-  padding: 20px;
-  background: var(--white);
-  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
-  border-radius: 20px;
-}
-.recentCustomers .imgBx {
-  position: relative;
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  overflow: hidden;
-}
-.recentCustomers .imgBx img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.recentCustomers table tr td {
-  padding: 12px 10px;
-}
-.recentCustomers table tr td h4 {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.2rem;
-}
-.recentCustomers table tr td h4 span {
-  font-size: 14px;
-  color: var(--black2);
-}
-.recentCustomers table tr:hover {
-  background: var(--blue);
-  color: var(--white);
-}
-.recentCustomers table tr:hover td h4 span {
-  color: var(--white);
-}
-
 /* ====================== Responsive Design ========================== */
 @media (max-width: 991px) {
   .navigation {
@@ -430,7 +384,7 @@ body {
   .details {
     grid-template-columns: 1fr;
   }
-  .recentOrders {
+  .Requests {
     overflow-x: auto;
   }
   .status.inProgress {
@@ -466,4 +420,19 @@ body {
     right: 0;
     left: initial;
   }
+}
+
+
+
+#my-pie-chart {
+  height: 100px;
+  width: 100px;
+}
+
+#my-pie-chart {
+  border-radius: 50%;
+}
+
+#my-pie-chart {
+  background: conic-gradient(brown 0.00%, black 0.00% 0.55%, blue 0.55% 6.08%, green 6.08% 13.68%, yellow 13.68% 23.27%, orange 23.27% 40.47%, red 40.47%);
 }
