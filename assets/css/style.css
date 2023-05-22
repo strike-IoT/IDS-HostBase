@@ -285,15 +285,7 @@ body {
   border-radius: 20px;
 }
 
-.details .cardHeader {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.cardHeader h2 {
-  font-weight: 600;
-  color: var(--blue);
-}
+ 
 .cardHeader .btn {
   position: relative;
   padding: 2px 4px;
